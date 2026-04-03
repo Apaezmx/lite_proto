@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  lite_proto_bench:
+    build: .
+    image: lite_proto_test
+    container_name: lite_proto_bench

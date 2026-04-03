@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+enum Corpus {
+  UNIVERSAL = 0;
+  WEB = 1;
+  IMAGES = 2;
+}
+
+message AllTypes {
+  bool b = 1;
+  int32 i32 = 2;
+  uint32 u32 = 3;
+  int64 i64 = 4;
+  uint64 u64 = 5;
+  float f = 6;
+  double d = 7;
+  string s = 8;
+  bytes by = 9;
+  
+  repeated bool rb = 10;
+  repeated int32 ri32 = 11;
+  repeated uint32 ru32 = 12;
+  repeated int64 ri64 = 13;
+  repeated uint64 ru64 = 14;
+  repeated float rf = 15;
+  repeated double rd = 16;
+  repeated string rs = 17;
+  
+  Corpus c = 18;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message Address {
+  string city = 1;
+  string zip = 2;
+}
+
+message Person {
+  string name = 1;
+  int32 id = 2;
+  string email = 3;
+  Address address = 4;
+  repeated string phone_numbers = 5;
+  bool active = 6;
+  float score = 7;
+}
